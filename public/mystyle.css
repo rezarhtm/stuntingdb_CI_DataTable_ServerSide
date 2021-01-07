@@ -1,0 +1,61 @@
+.label{
+    font-weight:bold;
+    color:navy;
+}
+.ck-status label{
+    padding-right: 15px;
+}
+.form-group .radio-inline{
+    padding-right: 15px;
+}
+.divider{
+    border: black solid 1px;
+    margin: 60px;
+    background-color: black;
+}
+form{
+    background: white;
+}
+.login-form .form-control{
+    padding-bottom: 15px;
+}
+.formcon{
+    padding-top:30px; padding-bottom:30px;
+}
+.home-datatable-head{
+    padding: 10px;
+}
+.home-datatable-head button{
+    margin-left: 10px;
+}
+.formcon .row .all-info{
+    padding: 15px;
+}
+.formcon .row .infoComponent {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.header-info{
+    background-color: #E2E1F0;
+    padding:15px;
+}
+
+.all-details {
+    margin-bottom: 60px;
+}
+.the-form button{
+    margin-bottom: 15px;
+}
+.report-buttons button{
+    margin-bottom: 15px;
+}
+.graph-title{
+    font-weight: bold;
+    text-align: center;
+}
+.not-found{
+    margin: 0 auto !important;
+}
+ul .navbar-nav li{
+    padding: 10px !important;
+}
