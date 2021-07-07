@@ -9,19 +9,19 @@
     <?php } else { echo " ";}?>
   </div>
       
-  <table class="table table-hover" id="mytable">
+  <table class="table table-hover display responsive nowrap" id="mytable">
     <thead>
       <tr>
         <th>Kode Registrasi</th>
-        <th>Puskesmas</th>
-        <th>Waktu Registrasi</th>
-        <th>Supervisi</th>
+        <th class="mobile-p" data-priority="1">Puskesmas</th>
+        <th>Terdaftar</th>
+        <th class="mobile-p" data-priority="2">Supervisi</th>
+        <th></th>
         <th></th>
       </tr>
     </thead>
 
     <?php
-    
     foreach($puskesmas as $p) {
       $getid = $p->user_id;
     ?>
@@ -36,7 +36,10 @@
         <td>
           <!--<button type="button" class="btn btn-danger">Edit</button>-->
           <a href="<?php echo base_url();?>dinkes/edit_puskesmas/<?php echo $getid ?>"><button type="button" class="btn btn-info">Edit</button></a>
-          <a href="<?php echo base_url();?>dinkes/delete_puskesmas/<?php echo $getid ?>"><button type="button" class="btn btn-danger">Hapus</button></a>
+        </td>
+        <td>
+          
+        <a href="<?php echo base_url();?>dinkes/delete_puskesmas/<?php echo $getid ?>"><button type="button" class="btn btn-danger">Hapus</button></a>
         </td>
         <?php } else { echo " ";}?>
       </tr>

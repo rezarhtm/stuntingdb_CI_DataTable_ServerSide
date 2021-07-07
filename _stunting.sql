@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 07, 2021 at 02:37 PM
+-- Generation Time: Jan 05, 2021 at 02:18 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.2.34
 
@@ -150,7 +150,6 @@ INSERT INTO `user` (`user_id`, `user_firstname`, `password`, `user_email`, `user
 (1120114, 'Jagakarsa', '21232f297a57a5a743894a0e4a801fc3', 'fivefive@asd.asd', 'PUSKESMAS', 'Admin Dinas Kesehatan', '2020-12-15', '2020-12-17 14:35:02'),
 (1120418, 'Dondy Ginanjar', '92575c476597abfb8598c83541d3fb7d', 'dondy@asd.asd', 'PUSKESMAS', 'Admin Dinas Kesehatan', '2020-12-13', '2020-12-17 03:24:45'),
 (1120520, 'Duren Tiga', '21232f297a57a5a743894a0e4a801fc3', 'tiga@asd.asd', 'PUSKESMAS', 'Admin Dinas Kesehatan', '2020-12-15', '2020-12-17 14:34:49'),
-(1121911, 'Kebon Jeruk', '21232f297a57a5a743894a0e4a801fc3', 'kbjeruk@asd.asd', 'PUSKESMAS', 'Admin Dinas Kesehatan', '2021-06-08', '2021-06-07 22:14:16'),
 (1220338, 'Widi Chandra', '21232f297a57a5a743894a0e4a801fc3', 'widi@asd.asd', 'BIDAN', 'Jagakarsa', '2020-12-18', '2020-12-18 01:34:05'),
 (1220811, 'Sari Fransiska', '21232f297a57a5a743894a0e4a801fc3', 'sari@asd.asd', 'BIDAN', 'Jagakarsa', '2020-12-18', '2020-12-18 01:34:54'),
 (1220936, 'Tari Gunawan', 'f024197cc16a7c1eda2e4c677616051d', 'tari@asd.asd', 'BIDAN', 'Duren Tiga', '2020-12-13', '2020-12-17 15:14:20'),

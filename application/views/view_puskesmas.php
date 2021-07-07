@@ -4,13 +4,15 @@
     <h2>Puskesmas</h2>
   </div>
       
-  <table class="table table-hover" id="mytable">
+  <table class="table table-hover display responsive nowrap" id="mytable" style="width: 100%">
     <thead>
       <tr>
         <th>Kode Registrasi</th>
-        <th>Puskesmas</th>
-        <th>Waktu Registrasi</th>
-        <th>Supervisi</th>
+        <th class="mobile-p" data-priority="1">Puskesmas</th>
+        <th>Terdaftar</th>
+        <th  class="mobile-p" data-priority="2">Supervisi</th>
+        <th></th>
+        <th></th>
       </tr>
     </thead>
 

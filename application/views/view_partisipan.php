@@ -3,14 +3,14 @@
       <h2>Partisipan</h2>
     </div>
         
-    <table id="mytable_view_part" class="table table-hover" cellspacing="0" width="100%">
+    <table id="mytable_view_part" class="table table-hover display responsive nowrap" cellspacing="0" width="100%">
       <thead>
         <tr>
           <th>ID</th>
-          <th>Nama Partisipan</th>
+          <th data-priority="1">Nama Partisipan</th>
           <th>Bidan</th>
           <th>Puskesmas</th>
-          <th>Laporan</th>
+          <th data-priority="2">Laporan</th>
         </tr>
       </thead>
 
@@ -22,6 +22,7 @@
     <script type="text/javascript"> 
         $(document).ready(function() {
             $('#mytable_view_part').DataTable({
+                "responsive": true,
                 "serverSide": true,
                 "processing": true,
                 "order": [],

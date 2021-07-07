@@ -7,12 +7,12 @@
         //echo (count($temp));
         } 
     ?>
-    <div class="row">
+    <div class="row" style="text-align: center">
         <div class="col-md-6 col-sm-6">
             <h2 style="font-weight: bold;">Laporan Pertumbuhan Anak</h2>
         </div>
-        <div class="col-md-6 col-sm-6" style="text-align: right;">
-            <h5 style="font-weight: bold;"><?php echo $p['id'];?></h5>
+        <div class="col-md-6 col-sm-6">
+            <h5 style="font-weight: bold; padding-top:24px;"><?php echo $p['id'];?></h5>
             <h2><?php echo $p['name_anak'];?></h2>
         </div>
     </div>
@@ -49,8 +49,6 @@
                     </div>
                 </div>
                 <div class=".d-none .d-sm-none .d-md-block col-md-4 col-lg-4 report-buttons">
-                <button type="button" onclick="window.print()" class="btn btn-primary btn-lg btn-block" style="font-size:24px;"><i class='fas fa-print'></i> Print</button>
-                <a href="<?php echo $_SERVER['HTTP_REFERER'];?>"><button type="button" class="btn btn-danger btn-lg btn-block" style="font-size:24px;"><i class='fas fa-arrow-circle-left'></i> Tutup</button></a>
                     
                 </div>
             </div><!--end row-->
@@ -94,5 +92,10 @@
             <?php include 'lap_ayah.php';?>
         </div>
     </div><!--end row-->
+
+    <button type="button" onclick="window.print()" class="btn btn-primary btn-lg btn-block" style="font-size:24px;"><i class='fas fa-print'></i> Print</button>
+    </br></br>
+    <a href="<?php echo $_SERVER['HTTP_REFERER'];?>"><button type="button" class="btn btn-danger btn-lg btn-block" style="font-size:24px;"><i class='fas fa-arrow-circle-left'></i> Tutup</button></a>
+                
 
 </div><!--end container formcon-->
