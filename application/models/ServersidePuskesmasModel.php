@@ -1,6 +1,6 @@
 <?php
 
-Class ServersidePuskModel extends CI_Model{
+Class ServersidePuskesmasModel extends CI_Model{
 
     var $table = 'user';
     var $column_order = array('user_id', 'user_firstname', 'tag', 'reg_date');
@@ -30,7 +30,7 @@ Class ServersidePuskModel extends CI_Model{
     {
         $this->load->database();
         $this->query_puskesmas();
-        $this->db->where('user_category','PUSKESMAS');
+        #$this->db->where('user_category','PUSKESMAS');
         $query = $this->db->get();
         
         return $query -> result();

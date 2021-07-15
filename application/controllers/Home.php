@@ -45,12 +45,40 @@ class Home extends CI_Controller{
         $this->load->view("footer");
     }
 
+    public function get_all_puskesmas_ajax(){
+        $this->load->model("ServersidePuskesmasModel");
 
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        
+            $data = $this->ServersidePuskesmasModel->get_puskesmas();
+            $deploy = [];
+            foreach($data as $x) {
+                $row = array();
+                $row[] = $x->user_id;
+                $row[] = $x->user_firstname;
+                $row[] = $x->reg_date;
+                $row[] = $x->tag;
+                $deploy[] = $row;
+            }
 
+            $output = array(
+                "draw" => $_POST['draw'],
+                "recordsTotal" => $this->ServersidePuskesmasModel->count_all_data(),
+                "recordsFiltered" => $this->ServersidePuskesmasModel->count_filter_data(),
+                "data" => $deploy,
+            );
 
+            echo json_encode($output);
+        }
 
+        if ($_SERVER['REQUEST_METHOD'] === 'GET'){
+            
+            $this->load->view("header");
+            $this->load->view("view_puskesmas");
+            $this->load->view("footer");
+        }
 
-
+    }
 
     public function get_all_part(){
         $this->load->model('ServersideModel');

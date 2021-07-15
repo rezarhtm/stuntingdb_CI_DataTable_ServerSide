@@ -3,8 +3,8 @@
     
     <h2>Puskesmas</h2>
   </div>
-      
-  <table class="table table-hover display responsive nowrap" id="mytable" style="width: 100%">
+  <?php echo $output; ?>
+  <table class="table table-hover display responsive nowrap" id="mytable-pus" style="width: 100%">
     <thead>
       <tr>
         <th>Kode Registrasi</th>
@@ -32,3 +32,25 @@
     <?php } ?>
   </table>
 </div>
+</body>
+
+<script type="text/javascript"> 
+    $(document).ready(function() {
+      
+        $('#mytable-pus').DataTable({
+            "responsive": true,
+            "serverSide": true,
+            "processing": true,
+            "order": [],
+            "ajax": {
+                "url": "<?php base_url('index.php/Home/get_all_puskemas');?>",
+                "type": "POST",
+            },
+            
+            "columnDefs": [{
+                "target":[-1],
+                "orderable": false
+            }]
+        });
+    } );
+</script>
